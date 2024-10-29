@@ -1,0 +1,33 @@
+:root{
+    --brand-color: #9BF00B;
+    --dark-10: #0C0C0C;
+    --dark-20: #777777;
+    --dark-30: #C0C0C0;
+    --dark-40: #FFFFFF;
+    --bg-color: #0D100C;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--dark-40);
+}
+
+.text-brand{
+    color: var(--brand-color);
+}
+
+.container{
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+.hr {
+    height: 1px;
+    border-bottom: 1px solid var(--dark-30);
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}

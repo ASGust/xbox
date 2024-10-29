@@ -1,0 +1,37 @@
+.games {
+    display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   margin-top: 192px;
+}
+
+.games .game-banner img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all .2s ease-in-out;
+}
+
+.games .game-banner {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.games .game-banner:hover img{
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1300px){
+    .games{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 0 32px;
+    }
+}
+@media screen and (max-width: 700px){
+    .games{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 24px;
+    }
+   
+}

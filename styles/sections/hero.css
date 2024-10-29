@@ -1,0 +1,101 @@
+.hero{
+    margin-top: 112px;
+}
+
+.hero .hero-title{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero .gradient{
+    background: image(url("../../assets/images/luz-verde.png")) center;
+    width: 705px;
+    height: 303px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-title h1{
+    font-size: 72px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: var(--dark-40);
+}
+
+.hero-title p{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--brand-color);
+}
+
+.hero .xbox{
+    margin: 0 auto;
+    display: block;
+}
+
+.hero .description{
+    width: 100%;
+    max-width: 1216px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 112px;
+}
+.hero .description{
+    color: var(--dark-40);
+}
+
+.hero .description h2{
+    font-weight: 600;
+    font-size: 64px;
+}
+.hero .description h2 span{
+    color: var(--brand-color);
+}
+
+.hero .description .left{
+    max-width: 570px;
+}
+
+.hero .description p{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--dark-30);
+}
+
+@media screen and (max-width: 1300px){
+    .hero-title h1{
+        font-size: 48px;
+    }
+    .hero-title p{
+        font-size: 18px;
+    }
+    .hero .description h2{
+        font-size: 32px;
+    }
+    .hero .description p{
+        font-size: 16px;
+    }
+    .hero .description .left{
+        max-width: 300px;
+    }
+    .control{
+        max-width: 280px;
+    }
+    .hero .description{
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .description{
+        flex-direction: column;
+        text-align: center;
+    }
+    .description .control{
+        margin-top: 48px;
+    }
+}

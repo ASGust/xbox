@@ -1,0 +1,29 @@
+.footer{
+    padding: 48px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .right{
+    display: flex;
+    gap: 56px;
+    color: var(--dark-20);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.footer img{
+    max-width: 146px;
+}
+
+@media screen and (max-width: 700px) {
+    .footer .right{
+        flex-direction: column;
+        gap:0px;
+        
+    }
+        .footer .right p {
+            margin: 0;
+        }
+}
